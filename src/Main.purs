@@ -30,7 +30,7 @@ main = do
   sparkle' "content" "AllCaps" $ fromVS <<< checkRules allCaps
   sparkle' "content" "BeginsWith \"Apple\"" $ fromVS <<< checkRules beginsWithApple
   sparkle' "content" "Capitalized" $ fromVS <<< checkRules capitalized
-  sparkle' "content" "Contains \"Foo\"" $ fromVS <<< checkRules containsFoo
+  sparkle' "content" "Contains \"foo\"" $ fromVS <<< checkRules containsFoo
   sparkle' "content" "EndsWith \"!\"" $ fromVS <<< checkRules endsWithBang
 
 allCaps :: RProxy (allCaps :: AllCaps)
